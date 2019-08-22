@@ -1,0 +1,18 @@
+input[type="button"] {
+    width:170px;
+    text-align: left;
+    padding: 5px;
+    margin: 3px;
+ }
+ input[type="text"], select {
+    margin: 3px;
+ }
+ label {
+    padding: 3px;
+    margin: 10px;
+ }
+ #home{
+     width: 50%;
+     float: left;
+ }
+ 
