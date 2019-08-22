@@ -1,9 +1,8 @@
 import {myHouse} from './index.js'
 import {MicrowaveOven} from './microwave.js';
-export function renderMO(model) { //by Max
-    var mo = new MicrowaveOven(model); //by Max
+export function renderMO(model) {
+    var mo = new MicrowaveOven(model);
     myHouse.addMO(mo);
-    //var count = myHouse._mo.length - 1;
 
     var moDiv = document.createElement('div');
     moDiv.id = 'mo';
@@ -43,12 +42,12 @@ export function renderMO(model) { //by Max
     p.id = 'power';
     p.innerText = 'Power';
 
-    var power = document.createElement('b');
+    var power = document.createElement('p');
     power.innerText = mo._power;
 
     var increasePower = document.createElement('button');
     increasePower.type = 'button';
-    increasePower.value = '+';
+    increasePower.innerText = '+';
     increasePower.addEventListener('click', function () {
         mo.increasePower();
         return power.innerText = mo._power;
@@ -56,11 +55,16 @@ export function renderMO(model) { //by Max
 
     var decreasePower = document.createElement('button');
     decreasePower.type = 'button';
-    decreasePower.value = '-';
+    decreasePower.innerText = '-';
     decreasePower.addEventListener('click', function () {
         mo.decreasePower();
         return power.innerText = mo._power;
     });
+
+    var delButton = document.createElement('button');
+    delButton.type = 'button';
+    delButton.innerHTML = '<b>Delete this Microvawe Owen</b>';
+
     console.log(myHouse);
     moDiv.appendChild(label1);
     moDiv.appendChild(model);
@@ -69,7 +73,7 @@ export function renderMO(model) { //by Max
     moDiv.appendChild(offBtn);
     moDiv.appendChild(p);
     moDiv.appendChild(power);
-    moDiv.appendChild(increasePower);
     moDiv.appendChild(decreasePower);
-    document.getElementById('home').appendChild(moDiv);
+    moDiv.appendChild(increasePower);    
+    document.body.appendChild(moDiv);
 };

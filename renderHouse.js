@@ -15,12 +15,12 @@ export function renderHouse(h) {
 
     var ownerInput = document.createElement('input');
     ownerInput.type = 'text';
-    ownerInput.name = 'ownerInput';
+    //ownerInput.name = 'ownerInput';
     ownerInput.value = h.Owner();
 
     var ownerSubmit = document.createElement('input');
     ownerSubmit.type = 'button';
-    ownerInput.name = 'ownerSubmit';
+    //ownerInput.name = 'ownerSubmit';
     ownerSubmit.value = 'Change';
     ownerSubmit.addEventListener('click', function () {
         h.Owner(ownerInput.value);
@@ -39,7 +39,7 @@ export function renderHouse(h) {
 
     var adressInput = document.createElement('input');
     adressInput.type = 'text';
-    adressInput.name = 'adressInput';
+    //adressInput.name = 'adressInput';
     adressInput.value = h.Adress();
 
     var adressSubmit = document.createElement('input');
@@ -78,7 +78,7 @@ export function renderHouse(h) {
 
     var deviceSubmit = document.createElement('input');
     deviceSubmit.type = 'button';
-    deviceSubmit.name = 'deviceSubmit';
+    //deviceSubmit.name = 'deviceSubmit';
     deviceSubmit.value = 'Add Device';
     deviceSubmit.addEventListener('click', function () {
         var model = prompt('Enter the device`s model', '');
