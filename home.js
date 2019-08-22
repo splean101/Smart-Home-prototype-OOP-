@@ -1,5 +1,3 @@
-//'use strict';
-
 export function Home(name, city) {
     this._owner = name;
     this._adress = city;

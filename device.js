@@ -1,5 +1,3 @@
-//'use strict';
-
 export function Device (model){
     this._model = model;
     this._state = 'off';

@@ -1,5 +1,3 @@
-// rendering MicroWave Owen---------------------------------------------------------
-//console.log(new MicrowaveOven(model));
 import {myHouse} from './index.js'
 import {MicrowaveOven} from './microwave.js';
 export function renderMO(model) { //by Max

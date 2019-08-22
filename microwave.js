@@ -1,4 +1,3 @@
-//'use strict';
 import { Device } from './device.js'
 
 export function MicrowaveOven(model) {
