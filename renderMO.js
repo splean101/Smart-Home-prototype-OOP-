@@ -61,7 +61,7 @@ export function renderMO(model) { //by Max
         mo.decreasePower();
         return power.innerText = mo._power;
     });
-    console.log(mo);
+    console.log(myHouse);
     moDiv.appendChild(label1);
     moDiv.appendChild(model);
     moDiv.appendChild(state);
@@ -72,6 +72,4 @@ export function renderMO(model) { //by Max
     moDiv.appendChild(increasePower);
     moDiv.appendChild(decreasePower);
     document.getElementById('home').appendChild(moDiv);
-
 };
-//renderHouse(myHouse);

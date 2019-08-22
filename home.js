@@ -1,6 +1,6 @@
 export function Home(name, city) {
-    this._owner = name;
-    this._adress = city;
+    this._owner = name; //prompt('Enter the name', '');
+    this._adress = city; //prompt('Enter the city', '');
     this._air = [];
     this._tv = [];
     this._mo = [];

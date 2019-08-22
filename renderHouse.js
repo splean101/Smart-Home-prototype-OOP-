@@ -19,7 +19,7 @@ export function renderHouse(h) {
     ownerInput.value = h.Owner();
 
     var ownerSubmit = document.createElement('input');
-    ownerSubmit.type = 'submit';
+    ownerSubmit.type = 'button';
     ownerInput.name = 'ownerSubmit';
     ownerSubmit.value = 'Change';
     ownerSubmit.addEventListener('click', function () {
@@ -43,7 +43,7 @@ export function renderHouse(h) {
     adressInput.value = h.Adress();
 
     var adressSubmit = document.createElement('input');
-    adressSubmit.type = 'submit';
+    adressSubmit.type = 'button';
     adressInput.name = 'adressSubmit';
     adressSubmit.value = 'Change';
     adressSubmit.addEventListener('click', function () {
@@ -77,20 +77,17 @@ export function renderHouse(h) {
     moOption.innerText = 'Microwave Owen';
 
     var deviceSubmit = document.createElement('input');
-    deviceSubmit.type = 'submit';
+    deviceSubmit.type = 'button';
     deviceSubmit.name = 'deviceSubmit';
     deviceSubmit.value = 'Add Device';
     deviceSubmit.addEventListener('click', function () {
         var model = prompt('Enter the device`s model', '');
         switch (addDeviceInput.value) {
             case 'Air Conditioner':
-                h.addConditioner(new AirConditioner);
                 renderAir(model);
             case 'TV':
-                h.addTV(new TvSet);//h.addTV(new TvSet);
                 renderTv(model);
             case 'Microwave Owen':
-                h.addMO(new MicrowaveOven);
                 renderMO(model);
         };
     });
