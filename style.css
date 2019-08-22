@@ -19,18 +19,29 @@ input[type="button"] {
  fieldset{
      width: 50%;
  }
- #mo, #mo p {
+ #mo {
     width: 50%;
     border: 1px solid green;
     border-radius: 10px;
     padding: 7px;
     margin: 5px;
  }
+ #mo p {
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 3px;
+   margin: 5px;
+   display: inline;
+}
  #mo div {
    text-align: center;
    width: 10%;
    border: 1px solid burlywood;
    padding: 5px;
    margin: 5px;
+}
+#del {
+   display: block;
+   margin:  0 0 0 auto;
 }
  

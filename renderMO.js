@@ -15,7 +15,7 @@ export function renderMO(model) {
     model.type = 'text';
     model.placeholder = 'Enter the model of Microwave Owen';
     model.value = mo.Model();
-    model.addEventListener('submit', function () {
+    model.addEventListener('change', function () {
         mo.Model(model.value);
     });
 
@@ -47,7 +47,7 @@ export function renderMO(model) {
 
     var increasePower = document.createElement('button');
     increasePower.type = 'button';
-    increasePower.innerText = '+';
+    increasePower.innerHTML = '<b>+</b>';
     increasePower.addEventListener('click', function () {
         mo.increasePower();
         return power.innerText = mo._power;
@@ -55,7 +55,7 @@ export function renderMO(model) {
 
     var decreasePower = document.createElement('button');
     decreasePower.type = 'button';
-    decreasePower.innerText = '-';
+    decreasePower.innerHTML = '<b>-</b>';
     decreasePower.addEventListener('click', function () {
         mo.decreasePower();
         return power.innerText = mo._power;
@@ -63,6 +63,7 @@ export function renderMO(model) {
 
     var delButton = document.createElement('button');
     delButton.type = 'button';
+    delButton.id = 'del';
     delButton.innerHTML = '<b>Delete this Microvawe Owen</b>';
     delButton.addEventListener('click', function(){
         document.body.removeChild(moDiv);
