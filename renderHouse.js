@@ -78,8 +78,8 @@ export function renderHouse(h) {
 
     var deviceSubmit = document.createElement('input');
     deviceSubmit.type = 'button';
-    //deviceSubmit.name = 'deviceSubmit';
-    deviceSubmit.value = 'Add Device';
+    deviceSubmit.name = 'deviceSubmit';
+    deviceSubmit.value = '+ Add Device';
     deviceSubmit.addEventListener('click', function () {
         var model = prompt('Enter the device`s model', '');
         switch (addDeviceInput.value) {

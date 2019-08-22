@@ -64,7 +64,10 @@ export function renderMO(model) {
     var delButton = document.createElement('button');
     delButton.type = 'button';
     delButton.innerHTML = '<b>Delete this Microvawe Owen</b>';
-
+    delButton.addEventListener('click', function(){
+        document.body.removeChild(moDiv);
+    });
+    
     console.log(myHouse);
     moDiv.appendChild(label1);
     moDiv.appendChild(model);
@@ -74,6 +77,7 @@ export function renderMO(model) {
     moDiv.appendChild(p);
     moDiv.appendChild(power);
     moDiv.appendChild(decreasePower);
-    moDiv.appendChild(increasePower);    
+    moDiv.appendChild(increasePower);
+    moDiv.appendChild(delButton);     
     document.body.appendChild(moDiv);
 };
