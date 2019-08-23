@@ -1,4 +1,4 @@
-import {MicrowaveOven} from './microwave.js';
+//import {MicrowaveOven} from './microwave.js';
 import {renderMO} from './renderMO.js';
 
 export function renderHouse(h) {
