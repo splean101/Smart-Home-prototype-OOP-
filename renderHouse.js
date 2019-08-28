@@ -1,5 +1,4 @@
-//import {MicrowaveOven} from './microwave.js';
-import {renderMO} from './renderMO.js';
+import { renderMO } from './renderMO.js';
 
 export function renderHouse(h) {
     var fieldset = document.createElement('fieldset');
@@ -15,12 +14,10 @@ export function renderHouse(h) {
 
     var ownerInput = document.createElement('input');
     ownerInput.type = 'text';
-    //ownerInput.name = 'ownerInput';
     ownerInput.value = h.Owner();
 
     var ownerSubmit = document.createElement('input');
     ownerSubmit.type = 'button';
-    //ownerInput.name = 'ownerSubmit';
     ownerSubmit.value = 'Change';
     ownerSubmit.addEventListener('click', function () {
         h.Owner(ownerInput.value);
@@ -39,7 +36,6 @@ export function renderHouse(h) {
 
     var adressInput = document.createElement('input');
     adressInput.type = 'text';
-    //adressInput.name = 'adressInput';
     adressInput.value = h.Adress();
 
     var adressSubmit = document.createElement('input');
@@ -108,5 +104,4 @@ export function renderHouse(h) {
     field.appendChild(owner);
     field.appendChild(adress);
     field.appendChild(addDevice);
-
 };

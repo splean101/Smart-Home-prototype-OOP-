@@ -1,4 +1,4 @@
-import {myHouse} from './index.js'
+import { myHouse } from './home.js';
 import {MicrowaveOven} from './microwave.js';
 export function renderMO(model) {
     var mo = new MicrowaveOven(model);
@@ -38,11 +38,11 @@ export function renderMO(model) {
         return state.innerText = mo.getState();
     });
 
-    var p = document.createElement('p');
+    var p = document.createElement('span');
     p.id = 'power';
     p.innerText = 'Power';
 
-    var power = document.createElement('p');
+    var power = document.createElement('span');
     power.innerText = mo._power;
 
     var increasePower = document.createElement('button');
@@ -68,6 +68,9 @@ export function renderMO(model) {
     delButton.addEventListener('click', function(){
         document.body.removeChild(moDiv);
     });
+
+    var br1 = document.createElement('br');
+    var br2 = document.createElement('br');
     
     console.log(myHouse);
     moDiv.appendChild(label1);
@@ -75,8 +78,10 @@ export function renderMO(model) {
     moDiv.appendChild(state);
     moDiv.appendChild(onBtn);
     moDiv.appendChild(offBtn);
+    moDiv.appendChild(br1);
     moDiv.appendChild(p);
     moDiv.appendChild(power);
+    moDiv.appendChild(br2);
     moDiv.appendChild(decreasePower);
     moDiv.appendChild(increasePower);
     moDiv.appendChild(delButton);     
