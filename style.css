@@ -19,25 +19,31 @@ input[type="button"] {
  fieldset{
      width: 50%;
  }
- #mo {
+ #mo, #ac {
     width: 33%;
     border: 1px solid green;
     border-radius: 3px;
     padding: 7px;
     margin: 5px;
     line-height: 30px;
-    background-image: url('./mo.jpg');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+   background-repeat: no-repeat;
+   background-position: right;
  }
+ #mo {
+   background-image: url('./mo.jpg');
+   
+}
+#ac {
+   background-image: url('./ac.jpg');   
+}
  span {
    width: 100px;
    border: 1px solid black;
    border-radius: 5px;
    padding: 5px;
 }
- #mo div {
+ #mo div, #ac div {
    text-align: center;
    width: 10%;
    border: 1px solid burlywood;

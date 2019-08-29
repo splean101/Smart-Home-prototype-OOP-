@@ -1,4 +1,5 @@
 import { renderMO } from './renderMO.js';
+import { renderAir } from './renderAir.js';
 
 export function renderHouse(h) {
     var fieldset = document.createElement('fieldset');
