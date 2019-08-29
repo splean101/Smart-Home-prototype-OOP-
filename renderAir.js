@@ -41,7 +41,7 @@ export function renderAir(model) {
 
     var t = document.createElement('span');
     t.id = 'power';
-    t.innerText = 'Power';
+    t.innerText = 'Temp:  ';
 
     var temp = document.createElement('span');
     temp.innerText = ac._temp;
@@ -51,7 +51,7 @@ export function renderAir(model) {
     increaseTemp.innerHTML = '<b>+</b>';
     increaseTemp.addEventListener('click', function () {
         ac.increaseTemp();
-        return temp.innerText = mo._temp;
+        return temp.innerText = ac._temp;
     });
 
     var decreaseTemp = document.createElement('button');

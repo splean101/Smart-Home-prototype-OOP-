@@ -10,7 +10,7 @@ AirConditioner.prototype.constructor = AirConditioner;
 
 AirConditioner.prototype.increaseTemp = function () {
     if (this._temp >= 15 && this._temp < 28) {
-        if (this._state === 'off') {
+        if (this._state === 'OFF') {
             alert('Turn on the Air Conditioner');
         } else {
             ++this._temp;
@@ -19,8 +19,8 @@ AirConditioner.prototype.increaseTemp = function () {
 };
 
 AirConditioner.prototype.decreaseTemp = function () {
-    if (this._temp >= 15 && this._temp <= 28) {
-        if (this._state === 'off') {
+    if (this._temp > 15 && this._temp <= 28) {
+        if (this._state === 'OFF') {
             alert('Turn on the Air Conditioner');
         } else {
             --this._temp;
