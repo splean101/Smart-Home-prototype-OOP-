@@ -1,6 +1,6 @@
 export function Device (model){
     this._model = model;
-    this._state = 'off';
+    this._state = 'OFF';
 
 };
 
@@ -16,8 +16,8 @@ Device.prototype.getState = function () {
 };
 
 Device.prototype.on = function () {
-    return this._state = 'on';
+    return this._state = 'ON';
 };
 Device.prototype.off = function () {
-    return this._state = 'off';
+    return this._state = 'OFF';
 };

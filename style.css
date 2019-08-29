@@ -20,12 +20,16 @@ input[type="button"] {
      width: 50%;
  }
  #mo {
-    width: 50%;
+    width: 33%;
     border: 1px solid green;
     border-radius: 3px;
     padding: 7px;
     margin: 5px;
     line-height: 30px;
+    background-image: url('./mo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
  }
  span {
    width: 100px;
